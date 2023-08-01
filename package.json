@@ -1,0 +1,19 @@
+{
+  "name": "postyt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "repository": "https://github.com/ludovicweber87/postyt.git",
+  "author": "Ludovic <contact.lweber@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "yarn workspace frontend run dev",
+    "preview": "yarn workspace frontend run preview",
+    "build": "yarn workspace frontend run build",
+    "lint": "yarn workspaces run lint"
+  }
+}
