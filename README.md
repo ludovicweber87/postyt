@@ -1,2 +1,2 @@
-# postyt
+# Postyt
 Collaborative platform for retrospectives
