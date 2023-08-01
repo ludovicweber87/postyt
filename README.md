@@ -15,20 +15,6 @@ POSTYT is a collaborative platform designed to enhance Agile sprint retrospectiv
 - Collaborative Environment: Promote collaboration and teamwork with a positive and constructive approach.
 - Action-Oriented: Create actionable items for continuous improvement in subsequent sprints.
 
-## Getting Started
-
-To use POSTYT, follow these steps:
-
-1. Clone the repository to your local machine:
-
-git clone https://github.com/ludovicweber87/postyt.git
-
-2. Open the project in Visual Studio Code or your preferred code editor.
-
-3. Set up the required dependencies and environment, as mentioned in the project documentation.
-
-4. Launch the app and start your Agile sprint retrospectives.
-
 ## Contributing
 
 We welcome contributions from the community. If you want to contribute to POSTYT, please follow these guidelines:
