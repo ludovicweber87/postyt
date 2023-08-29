@@ -11,9 +11,23 @@
     "backend"
   ],
   "scripts": {
+    "server_dev": "yarn workspace backend run start:dev",
+    "server_start": "yarn workspace backend run start",
+    "server_prod": "yarn workspace backend run start:prod",
+    "server_build": "yarn workspace backend run build",
     "dev": "yarn workspace frontend run dev",
     "preview": "yarn workspace frontend run preview",
     "build": "yarn workspace frontend run build",
     "lint": "yarn workspaces run lint"
+  },
+  "dependencies": {
+    "@nestjs/cli": "^10.1.11",
+    "eslint": "^8.46.0",
+    "global": "^4.4.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
   }
 }

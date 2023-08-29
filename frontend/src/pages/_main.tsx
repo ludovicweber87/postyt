@@ -1,15 +1,24 @@
 import { ChakraProvider } from "@chakra-ui/react";
+import router from "@postyt/lib/router/routes";
+import theme from "@postyt/lib/theme";
+import { AnimatePresence } from "framer-motion";
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
+import { QueryClient, QueryClientProvider } from "react-query";
 import { RouterProvider } from "react-router-dom";
-import { router } from "../lib/router/routes";
+
+const queryClient = new QueryClient();
 
 const rootElement = document.getElementById("root") as HTMLElement;
 
 ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
-    <ChakraProvider>
-      <RouterProvider router={router} />
-    </ChakraProvider>
+    <QueryClientProvider client={queryClient}>
+      <ChakraProvider theme={theme}>
+        <AnimatePresence>
+          <RouterProvider router={router} />
+        </AnimatePresence>
+      </ChakraProvider>
+    </QueryClientProvider>
   </React.StrictMode>
 );

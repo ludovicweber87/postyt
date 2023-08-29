@@ -1,5 +1,7 @@
+import MainFormPage from "@postyt/components/main-form-page";
+
 function Home() {
-  return <div>Let's rock </div>;
+  return <MainFormPage type="create-room" />;
 }
 
-export { Home };
+export default Home;
